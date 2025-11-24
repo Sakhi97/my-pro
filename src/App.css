@@ -1,27 +1,27 @@
 /* Fullscreen background */
 .app-container {
   background-image: url('./assets/background.png');
-  background-size: cover;
+  background-size: cover;      /* desktop: full cover */
   background-position: center;
   width: 100vw;
   min-height: 100vh;
 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
+  justify-content: center; 
   align-items: center;
 
   position: relative;
   padding: 20px;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* Fix background zoom on phones */
+/* Zoomed background on mobile */
 @media (max-width: 480px) {
   .app-container {
-    background-size: contain;
+    background-size: cover;       /* zoomed background */
+    background-position: center top; /* adjust crop */
     background-repeat: no-repeat;
-    background-position: center top;
     background-color: #000;
   }
 }
@@ -115,21 +115,21 @@
   text-align: center;
   color: white;
   margin-top: 20px;
-  line-height: 1.2; /* reduce vertical gap */
+  line-height: 1.2;
 }
 
 /* Footer title */
 .footer-title {
-  font-size: 22px; /* bigger */
+  font-size: 22px;
   font-weight: 600;
-  margin: 0 0 4px 0; /* smaller gap */
+  margin: 0 0 4px 0;
 }
 
 /* Working hours lines */
 .footer-hours {
-  font-size: 20px; /* bigger and readable */
-  margin: 0; /* no extra spacing */
-  line-height: 1.2; /* closer lines */
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.2;
 }
 
 @media (max-width: 480px) {
@@ -141,5 +141,4 @@
     font-size: 18px;
   }
 }
-
 
