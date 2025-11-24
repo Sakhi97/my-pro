@@ -7,6 +7,7 @@ function App() {
     <div className="app-container">
       <div className="overlay" />
 
+      {/* Main content */}
       <div className="content">
         <img src={logo} alt="Logo" className="logo" />
 
@@ -46,9 +47,19 @@ function App() {
           WhatsApp
         </a>
       </div>
+
+      {/* Footer with working hours */}
+      <footer className="footer">
+        <p className="footer-title">Opening Hours:</p>
+        <p className="footer-hours">Mon–Thu: 10:00 – 01:00</p>
+        <p className="footer-hours">Fri–Sun: 10:00 – 03:00</p>
+      </footer>
     </div>
   )
 }
+
+export default App
+
 
 export default App
 
