@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import background from './assets/background.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div
+      className="app-container"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <a href="https://qr.scanned.page/uploads/pdf/Z8ZbrD_9f089aceca1ef8b9.pdf" className="link" target="_blank">Menu</a>
+      <a href="https://maps.app.goo.gl/64Zpm7KW4A1AQiHF8?g_st=ipc" className="link" target="_blank">Google maps</a>
+      <a href="https://www.instagram.com/sushipandadubai?igsh=MWR3cHR0dG5kajhsaw==" className="link" target="_blank">Instagram</a>
+      <a href="wa.me/971585837613" className="link" target="_blank">Whats App</a>
+    </div>
   )
 }
 
 export default App
+
