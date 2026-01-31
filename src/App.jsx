@@ -55,6 +55,15 @@ function App() {
           Order Now 20 % discount
           Free delivery in JBR
         </a>
+
+        <a
+          href="https://www.talabat.com/uae/sushi-panda"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          Order Talabat
+        </a>
       </div>
 
       {/* Footer with working hours */}
