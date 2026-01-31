@@ -46,6 +46,15 @@ function App() {
         >
           WhatsApp
         </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=971585837613"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          Order Now 20 % discount
+          Free delivery in JBR
+        </a>
       </div>
 
       {/* Footer with working hours */}
